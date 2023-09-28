@@ -1,5 +1,5 @@
 <template>
-  <div>联系我们</div>
+  <div class="container" />
 </template>
 
 <script>
@@ -8,6 +8,12 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: url("/src/assets/lianxi.jpg") no-repeat fixed;
+  background-size: cover;
+}
 </style>

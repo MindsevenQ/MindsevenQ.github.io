@@ -1,7 +1,10 @@
 <template>
-  <div class="content">
-    <div class="title">会议路线</div>
-    <div class="title1">请选择您所预定的酒店</div>
+  <div class="content container">
+    <div class="title">
+      <div>会议路线</div>
+      <div>请选择您所预定的酒店</div>
+    </div>
+
     <div class="btnClass">
         <el-button round class="btn" @click="$router.push('./yannian')">
             <div>延年荟景酒店</div>
@@ -23,14 +26,24 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: url("/src/assets/kongbai.jpg") no-repeat fixed;
+  background-size: cover;
+}
 .content {
     text-align: center;
 }
-.title {
-    margin-top: 80px;
-}
-.title1 {
-    margin-top: 30px;
+.title{
+  margin-top: 10vh;
+  line-height: 5vh;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 .btnClass {
     display: flex;
@@ -38,7 +51,9 @@ export default {
     align-items: center;
 }
 .btn {
-    background: red;
+    background: url("/src/assets/btn2.png") no-repeat;
+    background-size: 100% 100%;
+    border: 0;
     color: #fff;
     font-weight: 700;
     margin-left: 0;

@@ -1,5 +1,5 @@
 <template>
-  <div>活动报名</div>
+  <div class="container" />
 </template>
 
 <script>
@@ -8,6 +8,12 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: url("/src/assets/baoming.jpg") no-repeat fixed;
+  background-size: cover;
+}
 </style>
